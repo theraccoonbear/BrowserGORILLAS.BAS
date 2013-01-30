@@ -1,0 +1,223 @@
+body {
+	background-color: #000;
+	width: 99%;
+	height: 99%;
+	color: #fff;
+	font-family: arial, verdana, tahoma, sans-serif;
+}
+#game {
+	background-color: #0402ac;
+	width: 640px;
+	height: 480px;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+}
+.building {
+	position: absolute;
+	bottom: 0px;
+	overflow: hidden;
+}
+.redBuilding {
+	background-color: #ac0204;
+}
+
+.tealBuilding {
+	background-color: #04aaac;
+}
+
+.grayBuilding {
+	background-color: #acaaac;
+}
+.gorilla {
+	background: url(../images/gorillas.gif);
+	width: 28px;
+	height: 29px;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1000;
+}
+#player1 {
+	left: 100px;
+}
+#player2 {
+	right: 100px;
+}
+
+#player1.throwing {
+	background-position: -28px 0;
+}
+
+#player2.throwing {
+	background-position: -56px 0;
+}
+
+.window {
+	width: 8px;
+	height: 12px;
+	position: absolute;
+}
+
+.lit {
+	background-color: #fcfe54;
+}
+
+.unlit {
+	background-color: #545654;
+}
+
+.sun {
+	width: 41px;
+	height: 30px;
+	background: url(../images/sun.gif);
+	position: absolute;
+	left: 300px;
+	top: 30px;
+}
+
+.banana {
+	background: url(../images/bananas.gif);
+	width: 24px;
+	height: 24px;
+	overflow: hidden;
+	position: absolute;
+}
+
+.banana[rel="1"] {
+	background-position: 0 0;
+}
+.banana[rel="2"] {
+	background-position: -24px 0;
+}
+.banana[rel="3"] {
+	background-position: -48px 0;
+}
+.banana[rel="4"] {
+	background-position: -72px 0;
+}
+
+.blast {
+	position: absolute;
+	background-image: url(../images/blast-anim.gif);
+	width: 24px;
+	height: 24px;
+}
+
+.blast.pt1 {
+	background-position: 0 0;
+}
+
+.blast.pt2 {
+	background-position: -24px 0;
+}
+
+.blast.pt3 {
+	background-position: -48px 0;
+}
+
+.killBlast {
+	width: 28px;
+	height: 29px;
+	overflow: hidden;
+	position: absolute;
+	background-image: url(../images/kill-blast-anim.gif);
+	z-index: 1000;
+}
+
+.killBlast.pt1 {
+	background-position: 0 0;
+}
+.killBlast.pt2 {
+	background-position: -28px 0;
+}
+.killBlast.pt3 {
+	background-position: -56px 0;
+}
+.killBlast.pt4 {
+	background-position: -84px 0;
+}
+.killBlast.pt4 {
+	background-position: -112px 0;
+}
+
+.playerInfo {
+	position: absolute;
+	top: 10px;
+	color: #fff;
+	font-family: arial, verdana, tahoma, sans-serif;
+	font-size: 14px;
+	padding: 5px;
+	border: 2px solid #0402ac;
+}
+
+.playerInfo .name {
+	font-size: 16px;
+}
+
+.playerInfo.active {
+	border: 2px solid #fcfe04;
+}
+
+.playerInfo.active .name {
+	color: #fcfe04;
+}
+
+#info1 {
+	left: 10px;
+}
+
+#info2 {
+	right: 10px;
+}
+
+.launch {
+	width: 150px;
+	text-align: left;
+}
+
+.launch .label {
+	font-weight: bold;
+}
+
+.controls {
+	position: absolute;
+	left: 650px;
+	top: 0px;
+	color: #fff;
+}
+
+.controls td {
+	color: #fff;
+	text-align: center;
+	width: 50px;
+}
+
+.controls div.ctl {
+	float: left;
+	/*margin-right: 15px;*/
+	width: 30px;
+	height: 350px;
+}
+
+.ui-slider-handle {
+	width: 40px !important;
+	height: 40px !important;
+	background: #888 !important;
+}
+
+.button {
+	width: 100px;
+	height: 50px;
+	border-right: 2px solid #555;
+	border-bottom: 2px solid #555;
+	border-left: 2px solid #ddd;
+	border-top: 2px solid #ddd;
+	background-color: #999;
+	color: #000;
+	vertical-align: middle;
+	position: relative;
+	text-align: center;
+}

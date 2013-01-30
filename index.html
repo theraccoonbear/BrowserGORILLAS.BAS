@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <title>Test</title>
+		<!--<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />-->
+		<!--<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />	 -->
+		<link type="text/css" href="css/pepper-grinder/jquery-ui-1.8.13.custom.css" rel="stylesheet" />
+		<link type="text/css" href="css/gorillas.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/2D.js"></script>
+		<script type="text/javascript" src="js/Intersection.js"></script>
+    <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.13.custom.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.touch.js"></script>
+		<script type="text/javascript" src="js/gorillas.js"></script>
+  </head>
+  <body>
+    <div id="game">
+			<div class="playerInfo" id="info1">
+				<span class="name active">Player 1</span><br/>
+				<div class="launch">
+					<span class="label">Angle:</span> <span class="angle">45</span><br/>
+					<span class="label">Velocity:</span> <span class="velocity">50</span><br/>
+					<span class="label">Score:</span> <span class="score">0</span>
+				</div>
+			</div>
+			
+			<div class="playerInfo" id="info2">
+				<span class="name">Player 2</span><br/>
+				<div class="launch">
+					<span class="label">Angle:</span> <span class="angle">45</span><br/>
+					<span class="label">Velocity:</span> <span class="velocity">50</span><br/>
+					<span class="label">Score:</span> <span class="score">0</span>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="controls">
+			<table>
+				<tr>
+					<td>ANG</td>
+				  <td>VEL</td>
+				</tr><tr>
+				  <td>
+						<div id="angSlider" class="ctl"></div>
+					</td><td>
+						<div id="velSlider" class="ctl"></div>
+					</td>
+				</tr><tr>
+				  <td colspan="2">
+						<div style="height: 25px;"></div>
+						<a href="#" id="throw" style="text-decoration: none;"><div class="button" style=""><div style="position:absolute; top:50%; margin-top: -18px; margin-left: 15px; text-decoration: none;">THROW<br/>BANANA</div></div></a>
+						<!--<input type="button" id="throw" value="Throw" style="width: 60px; height: 40px;"/>-->
+					</td>
+				</tr>
+			</table>
+		</div>
+  </body>
+</html>

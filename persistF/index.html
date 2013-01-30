@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <title>Test</title>
+    <script src="http://code.jquery.com/jquery-1.6.min.js"></script>
+		<script type="text/javascript">
+		  $(document).ready(function() {
+				$('#doEcho').click(function() {
+					$.getJSON('ajaxHandler.php', {method: 'echo', input: $('#echoText').val()}, function(d, status, xhr) {
+						if (d.error) {
+							alert(d.data.message);
+						} else {
+							$('#workspace').append(d.data)
+						}
+					});
+				});
+				
+				$('#doGetTime').click(function() {
+					$.getJSON('ajaxHandler.php', {method: 'getTime'}, function(d, status, xhr) {
+						if (d.error) {
+							alert(d.data.message);
+						} else {
+							$('#workspace').append(d.data)
+						}
+					});
+				});
+			});
+		</script>
+    <style type="text/css">
+      #output {
+        white-space:pre;
+        font-family:monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="workspace" style="border: 2px solid #40a; padding: 10px; width: 960px; height: 550px;"></div>
+		<a href="#" id="doEcho">Echo</a> <input type="text" id="echoText" value="Here is some text" /><p/>
+		<a href="#" id="doGetTime">Get Time</a>
+    
+  </body>
+</html>
